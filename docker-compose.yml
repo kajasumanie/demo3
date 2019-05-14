@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  deployonazuredemo:
+    image: ${DOCKER_REGISTRY-}deployonazuredemo
+    build:
+      context: .
+      dockerfile: DeployOnAzureDemo/Dockerfile
